@@ -24,6 +24,23 @@
 {%- endif -%}
 
 {%- style -%}
+  #shopify-section-{{ section.id }}{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 100vw;
+    margin-top:2.5rem;
+  }
+  #shopify-section-{{ section.id }} .banner{
+    width: 95%;
+    max-width: {{ settings.page_width }}px;
+    overflow:hidden;
+    border-radius: 5rem;
+  }
+  #Banner-{{ section.id }}__image-banner .banner__media{
+    width: 100%;
+  }
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
