@@ -1,0 +1,41 @@
+<div id="dealerCode" class="container"></div>
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+      padding: 20px 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      width: 100%;
+  }
+  #shopify-section-{{ section.id }} .container{
+    width: 100%;
+    max-width: 1400px;
+    text-align: right;
+    padding-right: 40px;
+  }
+ 
+{% endstyle %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedCode = localStorage.getItem("dealerDiscountCode");
+        const dealerCodeElement = document.getElementById("dealerCode");
+
+        if (savedCode) {
+            dealerCodeElement.innerHTML = `<h2 style="line-height: 1.5rem; font-size:2rem;">Your dealer code is: <strong style="color:#6fb321">${savedCode}</strong></h2>`;
+        }
+        
+    });
+</script>
+{% schema %}
+{
+  "name": "Dealer Code",
+  "tag": "section",
+  "class": "dealer-code-section",
+  "presets": [
+    {
+      "name": "Dealer Code"
+    }
+  ]
+}
+{% endschema %}
