@@ -299,7 +299,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const savedCode = localStorage.getItem("dealerDiscountCode");
-    
+        console.log({savedCode})
         if (!savedCode) return; // Exit early if no code entered
     
         const priceEls = document.querySelectorAll('.price-item--regular');
