@@ -298,27 +298,27 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function () {
-          const savedCode = localStorage.getItem("dealerDiscountCode");
-          if (!savedCode) return;
-      
-          const priceEls = document.querySelectorAll('.price-item--regular');
-      
-          priceEls.forEach(function (el) {
-            const priceText = el.textContent.trim();
-            const priceMatch = priceText.replace(/[^0-9.]/g, '');
-            const price = parseFloat(priceMatch);
-            if (isNaN(price)) return;
-      
-            const discountedPrice = (price * 0.9).toFixed(2);
-            const currencySymbol = priceText.replace(/[0-9.,\s]/g, '') || '$';
-      
-            el.innerHTML = `
-              <span style="text-decoration: line-through; opacity: 0.6;">${currencySymbol}${price.toFixed(2)}</span>
-              <span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">${currencySymbol}${discountedPrice}</span>
-            `;
-          });
-        }, 1000); // Adjust delay as needed
+        const savedCode = localStorage.getItem("dealerDiscountCode");
+    
+        if (!savedCode) return; // Exit early if no code entered
+    
+        const priceEls = document.querySelectorAll('.price-item--regular');
+    
+        priceEls.forEach(function (el) {
+          const priceText = el.textContent.trim();
+          const priceMatch = priceText.replace(/[^0-9.]/g, '');
+    
+          const price = parseFloat(priceMatch);
+          if (isNaN(price)) return;
+    
+          const discountedPrice = (price * 0.9).toFixed(2);
+          const currencySymbol = priceText.replace(/[0-9.,\s]/g, '') || '$';
+    
+          el.innerHTML = `
+            <span style="text-decoration: line-through; opacity: 0.6;">${currencySymbol}${price.toFixed(2)}</span>
+            <span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">${currencySymbol}${discountedPrice}</span>
+          `;
+        });
       });
     </script>
   </head>
