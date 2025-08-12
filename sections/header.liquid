@@ -448,7 +448,13 @@
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
+{%- if request.page_type == 'product' -%}
+  <script>
+    const addOns = document.querySelectorAll('.addOn');
 
+    console.log({addOns})
+  </script>
+{%- endif -%}
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = request.origin | append: routes.search_url | append: '?q={search_term_string}' %}
   <script type="application/ld+json">

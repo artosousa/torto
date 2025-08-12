@@ -131,7 +131,7 @@
   
           if (code) {
             localStorage.setItem("dealerDiscountCode", code);
-            window.location.href = `/discount/${encodeURIComponent(code)}`;
+            window.location.href = `/discount/${code}`;
           }
         });
       }

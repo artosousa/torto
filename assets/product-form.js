@@ -13,8 +13,43 @@ if (!customElements.get('product-form')) {
         this.submitButtonText = this.submitButton.querySelector('span');
 
         if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
-
         this.hideErrors = this.dataset.hideErrors === 'true';
+
+        window.addEventListener('load', () => {
+          // Call on initial page load
+          this.updateAddOns();
+        })
+
+        // Call on form change
+        this.form.addEventListener('change', () => {
+          this.updateAddOns();
+        });
+      }
+
+      updateAddOns() {
+        const savedCode = localStorage.getItem("dealerDiscountCode");
+        const addOns = this.querySelectorAll('.addOn');
+        const totalDiscountElement = document.querySelector('.gpo-total-text .money');
+        const cleanTotalDiscount = totalDiscountElement ? totalDiscountElement.innerText.replace('$', '').trim() : null
+        const totalAddonPrice = parseFloat(cleanTotalDiscount);
+
+        
+        if (savedCode) {
+          const discountedTotalPrice = totalAddonPrice ? parseFloat((totalAddonPrice * 0.9).toFixed(2)) : 0;
+          totalDiscountElement.innerHTML = `- <s>$${totalAddonPrice}</s> $${discountedTotalPrice}`;
+        }
+        
+        addOns.forEach((addOn) => {
+          // Remove + and $ and trim, then parse as float
+          const cleaned = addOn.innerText.replace('+', '').replace('$', '').trim();
+          const addOnPrice = parseFloat(cleaned);
+
+          // Apply 10% discount if code exists
+          const discountedAddOn = savedCode ? parseFloat((addOnPrice * 0.9).toFixed(2)) : parseFloat(addOnPrice.toFixed(2));
+          
+          addOn.innerHTML = `+ <s>$${addOnPrice}</s> $${discountedAddOn}`
+          
+        });
       }
 
       onSubmitHandler(evt) {
