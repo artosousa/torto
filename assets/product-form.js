@@ -33,7 +33,6 @@ if (!customElements.get('product-form')) {
         const cleanTotalDiscount = totalDiscountElement ? totalDiscountElement.innerText.replace('$', '').trim() : null
         const totalAddonPrice = parseFloat(cleanTotalDiscount);
 
-        
         if (savedCode) {
           const discountedTotalPrice = totalAddonPrice ? parseFloat((totalAddonPrice * 0.9).toFixed(2)) : 0;
           totalDiscountElement.innerHTML = `- <s>$${totalAddonPrice}</s> $${discountedTotalPrice}`;

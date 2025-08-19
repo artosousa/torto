@@ -1,0 +1,30 @@
+<div id="discount-code">
+</div>
+
+{% style %}
+  #discount-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #6fb321;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: fixed;
+    z-index: 10;
+    bottom: 1%;
+    left: 1%;
+  }
+{% endstyle %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedCode = localStorage.getItem("dealerDiscountCode");
+        const dealerCodeElement = document.getElementById("discount-code");
+
+        if (savedCode) {
+            dealerCodeElement.innerHTML = `<h2 style=" line-height: 1.5rem; font-size:2rem;">Save 10% courtesy of: <strong style="color:#fff">${savedCode}</strong></h2>`;
+        }
+        
+    });
+</script>
