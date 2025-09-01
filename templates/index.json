@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "dealer_code_6cxAVH": {
+      "type": "dealer-code",
+      "name": "Dealer Code",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -63,7 +68,7 @@
       "settings": {
         "collection": "custom-covers",
         "products_to_show": 3,
-        "title": "<strong>Custom Spa Cover</strong>",
+        "title": "<strong>Custom Hot Tub Cover</strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -145,6 +150,7 @@
     }
   },
   "order": [
+    "dealer_code_6cxAVH",
     "image_banner",
     "featured_collection_6nMbxz",
     "image_with_text_GXRrew",
