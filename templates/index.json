@@ -146,14 +146,14 @@
         "heading_kq46hy": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>CUSTOM COVERS</strong>",
+            "heading": "<strong>ABOUT US</strong>",
             "heading_size": "h0"
           }
         },
         "text_BengdT": {
           "type": "text",
           "settings": {
-            "text": "<p>If you're looking for the highest quality replacement hot tub cover made in Canada you have come to the right place. </p><p>Regardless of what type of hot tub cover you own; we guarantee you a perfect fit. Providing you with a high-quality UV thermal efficient replacement cover made in Canada by Canadian workers is what we do!</p>",
+            "text": "<p>With many years of experience in the hot tub industry, we’ve earned a reputation as one of Canada’s most trusted sources for high-quality replacement covers. Every cover we make is proudly crafted in Canada by skilled Canadian workers, ensuring exceptional durability, UV protection, and thermal efficiency.</p><p>We understand how important the right cover is for protecting your investment and maintaining your hot tub’s performance. That’s why we guarantee a perfect fit—no matter the size or style of your hot tub.</p><p>When you order from us, you’re not just buying a cover—you’re choosing peace of mind, reliable craftsmanship, and the assurance that your hot tub is protected by the best.</p>",
             "text_style": "body"
           }
         },
@@ -173,7 +173,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/custom-hot-tub-covers-451347_04a1b29c-7e4b-44a1-a1f1-3301fa0ae751.jpg",
+        "image": "shopify://shop_images/TORTO_FULL_COLOR_WEB_RESOLUTION_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
