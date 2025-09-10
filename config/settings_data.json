@@ -399,5 +399,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "body{overflow-x: hidden;}"
+    ]
   }
 }
