@@ -111,7 +111,7 @@
         "buttons_DPXMXi": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "CUSTOMIZE YOUR COVER NOW",
+            "button_label_1": "Customize Now",
             "button_link_1": "shopify://products/custom-swim-spa-covers",
             "button_style_secondary_1": false,
             "button_label_2": "",
