@@ -9,13 +9,18 @@
  */
 {
   "sections": {
+    "dealer_code_6cxAVH": {
+      "type": "dealer-code",
+      "name": "Dealer Code",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>CUSTOM MADE HOT TUB & SPA COVERS </strong>🇨🇦",
+            "heading": "<strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
             "heading_size": "hxl"
           }
         },
@@ -30,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize  Yours Today",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/custom-covers",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -63,7 +68,7 @@
       "settings": {
         "collection": "custom-covers",
         "products_to_show": 3,
-        "title": "<strong>Custom Spa Cover</strong>",
+        "title": "<strong>Custom Hot Tub Cover</strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -86,20 +91,69 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_3bDnKD": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JmTChj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Swim Spa Covers",
+            "heading_size": "h1"
+          }
+        },
+        "text_LMtaDg": {
+          "type": "text",
+          "settings": {
+            "text": "Superior Insulation, Perfect Fit",
+            "text_style": "body"
+          }
+        },
+        "buttons_DPXMXi": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Customize Now",
+            "button_link_1": "shopify://products/custom-swim-spa-covers",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JmTChj",
+        "text_LMtaDg",
+        "buttons_DPXMXi"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/SS20-Graphics-1080x1080-Nov-SwimSpas-1080x770.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "image_with_text_GXRrew": {
       "type": "image-with-text",
       "blocks": {
         "heading_kq46hy": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>CUSTOM COVERS</strong>",
+            "heading": "<strong>ABOUT US</strong>",
             "heading_size": "h0"
           }
         },
         "text_BengdT": {
           "type": "text",
           "settings": {
-            "text": "<p>If you're looking for the highest quality replacement hot tub cover made in Canada you have come to the right place. </p><p>Regardless of what type of hot tub cover you own; we guarantee you a perfect fit. Providing you with a high-quality UV thermal efficient replacement cover made in Canada by Canadian workers is what we do!</p>",
+            "text": "<p>With many years of experience in the hot tub industry, we’ve earned a reputation as one of Canada’s most trusted sources for high-quality replacement covers. Every cover we make is proudly crafted in Canada by skilled Canadian workers, ensuring exceptional durability, UV protection, and thermal efficiency.</p><p>We understand how important the right cover is for protecting your investment and maintaining your hot tub’s performance. That’s why we guarantee a perfect fit—no matter the size or style of your hot tub.</p><p>When you order from us, you’re not just buying a cover—you’re choosing peace of mind, reliable craftsmanship, and the assurance that your hot tub is protected by the best.</p>",
             "text_style": "body"
           }
         },
@@ -119,7 +173,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/custom-hot-tub-covers-451347_04a1b29c-7e4b-44a1-a1f1-3301fa0ae751.jpg",
+        "image": "shopify://shop_images/TORTO_FULL_COLOR_WEB_RESOLUTION_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -145,8 +199,10 @@
     }
   },
   "order": [
+    "dealer_code_6cxAVH",
     "image_banner",
     "featured_collection_6nMbxz",
+    "image_banner_3bDnKD",
     "image_with_text_GXRrew",
     "discount_modal_z6EdyH"
   ]
