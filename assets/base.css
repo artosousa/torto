@@ -3609,7 +3609,7 @@ details-disclosure>details {
   position: relative;
   display: block;
   overflow: hidden;
-  height: 80px;
+  height: 100px;
   margin-top: 8px;
 }
 
