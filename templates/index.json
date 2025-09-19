@@ -127,8 +127,8 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/SS20-Graphics-1080x1080-Nov-SwimSpas-1080x770.jpg",
-        "image_overlay_opacity": 40,
+        "image": "shopify://shop_images/85559abd-1a2f-42bc-a1fe-c37ea3326ce1.png",
+        "image_overlay_opacity": 0,
         "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-right",
