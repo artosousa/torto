@@ -38,6 +38,13 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "text_jjH9g6": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>CLICK HERE IF YOUR COVER REQUIRES A RAISED WATERFALL TO FIT JACUZZI J-400 MODELS OR COAST MODELS</strong>",
+            "text_style": "body"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -62,6 +69,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "text_jjH9g6",
         "buy_buttons",
         "description",
         "share"
