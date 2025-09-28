@@ -161,7 +161,7 @@
           "type": "button",
           "settings": {
             "button_label": "CUSTOMIZE YOUR COVER NOW",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/custom-tub-covers",
             "button_style_secondary": false
           }
         }
