@@ -35,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize  Yours Today",
-            "button_link_1": "shopify://collections/custom-covers",
+            "button_link_1": "shopify://collections/custom-tub-covers",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -132,7 +132,7 @@
         "image_height": "medium",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-right",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "right",
         "show_text_box": false,
         "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
