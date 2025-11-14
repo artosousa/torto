@@ -23,10 +23,44 @@ class CartItems extends HTMLElement {
     }, ON_CHANGE_DEBOUNCE_TIMER);
 
     this.addEventListener('change', debouncedOnChange.bind(this));
+
+    window.addEventListener('load', () => {
+      // Call on initial page load
+      this.updateAddOns();
+    })
+
+    // Call on form change
+    this.form.addEventListener('change', () => {
+      this.updateAddOns();
+    });
   }
 
   cartUpdateUnsubscriber = undefined;
+  updateAddOns() {
+    const savedCode = localStorage.getItem("dealerDiscountCode");
+    const addOns = this.querySelectorAll('.product-option--price');
+    if (savedCode) {
+      addOns.forEach((addOn) => {
 
+        const cleaned = addOn.innerText
+          .replace('+', '')
+          .replace('$', '')
+          .trim();
+
+        const addOnPrice = parseFloat(cleaned);
+
+        const discountedAddOn = savedCode
+          ? addOnPrice * 0.9
+          : addOnPrice;
+
+        // Always format on output
+        const originalFormatted = addOnPrice.toFixed(2);
+        const discountedFormatted = discountedAddOn.toFixed(2);
+
+        addOn.innerHTML = `<s>$${originalFormatted}</s> $${discountedFormatted}`;
+      });
+    }
+  }
   connectedCallback() {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
       if (event.source === 'cart-items') {
