@@ -38,6 +38,20 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "custom_liquid_MLGrxY": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.handle != 'raised-waterfall' and product.handle != 'custom-swim-spa-covers' %}\n<h3>Does your hot tub have a raised waterfall?</h3>\n<p>To fit Jacuzzi J-400 models or Coast Models. 5-3” taper. Trimmed foam and padding.</p>\n\n<a href=\"/products/raised-waterfall\" class=\"button button--primary\">CUSTOMIZE RAISED WATERFALL COVER</a>\n\n{% endif %}"
+          }
+        },
+        "text_jjH9g6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<a href=\"/products/platinum-copy\" title=\"Raised Waterfall\"><strong>CLICK HERE</strong></a><strong> IF YOUR COVER REQUIRES A RAISED WATERFALL TO FIT JACUZZI J-400 MODELS OR COAST MODELS</strong>",
+            "text_style": "body"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -62,6 +76,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "custom_liquid_MLGrxY",
+        "text_jjH9g6",
         "buy_buttons",
         "description",
         "share"

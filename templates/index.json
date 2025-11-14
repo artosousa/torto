@@ -35,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Customize  Yours Today",
-            "button_link_1": "shopify://collections/custom-covers",
+            "button_link_1": "shopify://collections/custom-tub-covers",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -127,14 +127,14 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/SS20-Graphics-1080x1080-Nov-SwimSpas-1080x770.jpg",
-        "image_overlay_opacity": 40,
+        "image": "shopify://shop_images/85559abd-1a2f-42bc-a1fe-c37ea3326ce1.png",
+        "image_overlay_opacity": 30,
         "image_height": "medium",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "desktop_content_position": "middle-right",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
+        "desktop_content_alignment": "right",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": true
@@ -161,7 +161,7 @@
           "type": "button",
           "settings": {
             "button_label": "CUSTOMIZE YOUR COVER NOW",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/custom-tub-covers",
             "button_style_secondary": false
           }
         }
