@@ -402,7 +402,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "body{overflow-x: hidden;}"
+      ".gpo-ov-helptext strong{color: #000 !important;}"
     ]
   }
 }
