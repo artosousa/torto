@@ -127,8 +127,8 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/85559abd-1a2f-42bc-a1fe-c37ea3326ce1.png",
-        "image_overlay_opacity": 30,
+        "image": "shopify://shop_images/1.jpg",
+        "image_overlay_opacity": 50,
         "image_height": "medium",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-right",
