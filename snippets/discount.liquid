@@ -120,5 +120,12 @@
             e.preventDefault();
             toggleExpand();
         });
+
+        window.addEventListener('scroll', function () {
+            if (!isMobile()) return;
+            if (!dealerCodeElement.classList.contains('discount-code--tab')) {
+                dealerCodeElement.classList.add('discount-code--tab');
+            }
+        }, { passive: true });
     });
 </script>
