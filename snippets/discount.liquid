@@ -22,7 +22,7 @@
     margin: 0;
   }
 
-  /* Mobile: tab on the side, appears after 10s; click to expand */
+  /* Mobile: tab on the side; click to expand */
   @media (max-width: 768px) {
     #discount-code {
       bottom: auto;
@@ -36,10 +36,10 @@
       cursor: pointer;
     }
     #discount-code[data-mobile-tab].discount-code--tab {
-      padding: 16px 8px;
+      padding: 18px 10px;
       min-width: auto;
       width: auto;
-      max-width: 44px;
+      max-width: 52px;
     }
     #discount-code[data-mobile-tab].discount-code--tab .discount-code__content {
       display: none;
@@ -63,7 +63,7 @@
     .discount-code__tab-label {
       display: none;
       color: #fff;
-      font-size: 0.75rem;
+      font-size: 1.15rem;
       font-weight: 700;
       line-height: 1.2;
       text-align: center;
@@ -113,7 +113,7 @@
             dealerCodeElement.classList.toggle('discount-code--tab');
         };
 
-        window.setTimeout(showAsTab, 10000);
+        showAsTab();
 
         dealerCodeElement.addEventListener('click', function (e) {
             if (!isMobile()) return;
