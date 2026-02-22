@@ -1,5 +1,4 @@
-<div id="discount-code">
-</div>
+<div id="discount-code"></div>
 
 {% style %}
   #discount-code {
@@ -15,6 +14,13 @@
     z-index: 10;
     bottom: 1%;
     left: 1%;
+  }
+  @media (max-width: 600px) {
+    #discount-code h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0;
+    }
   }
 {% endstyle %}
 <script>
