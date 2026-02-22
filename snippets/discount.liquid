@@ -1,4 +1,4 @@
-<div id="discount-code"></div>
+<div id="discount-code" class="discount-code" data-mobile-tab aria-hidden="true"></div>
 
 {% style %}
   #discount-code {
@@ -14,25 +14,111 @@
     z-index: 10;
     bottom: 1%;
     left: 1%;
+    transition: transform 0.25s ease, opacity 0.25s ease;
   }
-  @media (max-width: 600px) {
-    #discount-code{
-      background-color: rgba(111, 179, 33, 0.5);
+  #discount-code h2 {
+    color: #fff;
+    font-size: 1.5rem !important;
+    margin: 0;
+  }
+
+  /* Mobile: tab on the side, appears after 10s; click to expand */
+  @media (max-width: 768px) {
+    #discount-code {
+      bottom: auto;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0;
+      padding: 12px 10px;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+      cursor: pointer;
     }
-    #discount-code h2 {
+    #discount-code[data-mobile-tab].discount-code--tab {
+      padding: 16px 8px;
+      min-width: auto;
+      width: auto;
+      max-width: 44px;
+    }
+    #discount-code[data-mobile-tab].discount-code--tab .discount-code__content {
+      display: none;
+    }
+    #discount-code[data-mobile-tab].discount-code--tab .discount-code__tab-label {
+      display: block;
+    }
+    #discount-code[data-mobile-tab]:not(.discount-code--visible) {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-100%) translateY(-50%);
+    }
+    #discount-code[data-mobile-tab].discount-code--visible.discount-code--tab {
+      transform: translateX(0) translateY(-50%);
+    }
+    #discount-code[data-mobile-tab].discount-code--visible:not(.discount-code--tab) {
+      transform: translateX(0) translateY(-50%);
+      max-width: min(280px, 85vw);
+      padding: 16px 14px;
+    }
+    .discount-code__tab-label {
+      display: none;
       color: #fff;
-      font-size: 1.5rem !important;
-      margin: 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: 0.05em;
     }
+  }
+
+  @media (min-width: 769px) {
+    .discount-code__tab-label { display: none !important; }
   }
 {% endstyle %}
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const savedCode = localStorage.getItem("dealerDiscountCode");
         const dealerCodeElement = document.getElementById("discount-code");
+        const isMobile = () => window.innerWidth <= 768;
 
         if (savedCode) {
-            dealerCodeElement.innerHTML = `<h2 style=" line-height: 1.5rem; font-size:2rem;">10% OFF DEALER CODE <strong style="color:#fff">${savedCode}</strong></h2>`;
+            dealerCodeElement.innerHTML = [
+              '<span class="discount-code__tab-label" aria-hidden="true">10% OFF</span>',
+              '<div class="discount-code__content">',
+              '<h2 style="line-height: 1.5rem; font-size: 1.5rem;">10% OFF DEALER CODE <strong style="color:#fff">' + savedCode + '</strong></h2>',
+              '</div>'
+            ].join('');
+        } else {
+            dealerCodeElement.innerHTML = '';
+            dealerCodeElement.removeAttribute('data-mobile-tab');
+            return;
         }
+
+        if (!isMobile()) {
+            dealerCodeElement.removeAttribute('aria-hidden');
+            return;
+        }
+
+        dealerCodeElement.setAttribute('aria-hidden', 'true');
+        dealerCodeElement.classList.add('discount-code--tab');
+
+        const showAsTab = () => {
+            dealerCodeElement.classList.add('discount-code--visible');
+            dealerCodeElement.setAttribute('aria-hidden', 'false');
+        };
+
+        const toggleExpand = () => {
+            dealerCodeElement.classList.toggle('discount-code--tab');
+        };
+
+        window.setTimeout(showAsTab, 10000);
+
+        dealerCodeElement.addEventListener('click', function (e) {
+            if (!isMobile()) return;
+            e.preventDefault();
+            toggleExpand();
+        });
     });
 </script>
