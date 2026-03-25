@@ -62,7 +62,9 @@
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
-
+                <small class="tax-note caption-large rte">
+                  For "Homeowners " The cover will be delivered to the front of your home. Please note that the customer is responsible for installing the strap clips. However, if your hot tub is in a shielded, non-windy area, installing the straps is optional." For more complicated Lifters please contact your Referred repair company.
+                </small>
                 <small class="tax-note caption-large rte">
                   {%- if cart.duties_included and cart.taxes_included -%}
                     {%- if shop.shipping_policy.body == blank -%}
