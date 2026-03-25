@@ -29,7 +29,7 @@
         "text_NA4ACL": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Engineering the Ultimate Shield for Your Backyard Oasis<br/><br/></strong>At <strong>Torto Covers</strong>, we believe that a hot tub or swim spa is more than just a luxury—it’s an investment in your health, relaxation, and home. But even the best spa is only as good as the cover that protects it.</p><p>Founded on the principles of <strong>durability, energy efficiency, and precision fit</strong>, Torto Covers was born out of a simple observation: most \"standard\" covers simply aren't built to last. They get heavy, they sag, and they let expensive heat escape. We decided to do things differently.<strong><br/><br/></strong></p>",
+            "text": "<p><strong>Engineering the Ultimate Shield for Your Backyard Oasis<br/><br/></strong>At <strong>Torto Covers</strong>, we believe that a hot tub or swim spa is more than just a luxury—it’s an investment in your health, relaxation, and home. But even the best spa is only as good as the cover that protects it.</p><p>Our mission is to provide high-quality, Canadian-made covers specifically designed for the needs of Hot Tub Repair professionals and homeowners alike. We pride ourselves on durability and precision, ensuring every tub is protected by the best in the industry.</p>",
             "text_style": "body"
           }
         }
@@ -54,42 +54,10 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "rich_text_XkNYjX": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Dp6eWC": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Our Mission: \"The Tortoise Standard\"</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_AmwqEj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The name <strong>Torto</strong> is inspired by the natural engineering of the tortoise shell—a lightweight yet incredibly strong barrier designed to withstand the elements and protect what’s inside.</p><p>Our mission is to provide North American homeowners with custom-engineered covers that offer:</p><ul><li><strong>Maximum Heat Retention:</strong> Reducing your energy bills even in the harshest winters.</li><li><strong>Total Customization:</strong> No two spas are exactly the same. We specialize in custom shapes, oversized swim spas, and unique configurations.</li><li><strong>Long-Lasting Performance:</strong> Using marine-grade materials and reinforced stitching to ensure your cover doesn’t just look good today, but performs for years to come.</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Dp6eWC",
-        "text_AmwqEj"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
-    "image_with_text_4gCjVF",
-    "rich_text_XkNYjX"
+    "image_with_text_4gCjVF"
   ]
 }
