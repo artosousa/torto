@@ -63,6 +63,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_nDpDmd": {
+          "type": "text",
+          "settings": {
+            "text": "All sales are final.In consideration of the diverse assortment of hot tub cover dimensions, Torto is committed to ensuring precise measurements. Should there be a substantial discrepancy, the customer will be promptly contacted.In the event that an order cannot be fulfilled due to an unnoticed feature, the customer will be contacted to amend the order.A hot tub cover is considered a consumable item, with its lifespan determined by customer usage. The primary adversary that contributes to the degradation of covers is chemical exposure. By adopting straightforward practices, such as avoiding excessive sanitization, replacing the water every four months, and allowing the cover to remain open for twenty minutes following chemical additions, users can effectively prolong the lifespan of the cover.",
+            "text_style": "body"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -80,6 +87,7 @@
         "custom_liquid_MLGrxY",
         "text_jjH9g6",
         "buy_buttons",
+        "text_nDpDmd",
         "share"
       ],
       "settings": {
