@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -29,8 +30,8 @@
         "text_NA4ACL": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Engineering the Ultimate Shield for Your Backyard Oasis<br/><br/></strong>At <strong>Torto Covers</strong>, we believe that a hot tub or swim spa is more than just a luxury—it’s an investment in your health, relaxation, and home. But even the best spa is only as good as the cover that protects it.</p><p>Our mission is to provide high-quality, Canadian-made covers specifically designed for the needs of Hot Tub Repair professionals and homeowners alike. We pride ourselves on durability and precision, ensuring every tub is protected by the best in the industry.</p>",
-            "text_style": "body"
+            "text": "<p>Our mission is to provide high-quality, Canadian-made covers specifically designed for the needs of Hot Tub Repair professionals and homeowners alike. We pride ourselves on durability and precision, ensuring every tub is protected by the best in the industry</p>",
+            "text_style": "subtitle"
           }
         }
       },

@@ -14,6 +14,119 @@
       "name": "Dealer Code",
       "settings": {}
     },
+    "slideshow_knqpCG": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_y8wneq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/656385611_2155975791844410_3060902354450520524_n.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "🇨🇦 <strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
+            "heading_size": "h1",
+            "subheading": "Protect your investment with premium, Canadian-made hot tub and pool covers, tailored to fit perfectly and built to last.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_GdWzDM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/653922077_974409378446188_4593391666945827861_n.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "🇨🇦 <strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
+            "heading_size": "h1",
+            "subheading": "Protect your investment with premium, Canadian-made hot tub and pool covers, tailored to fit perfectly and built to last.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_eHknRc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/654035793_3333189726843507_3035344333589102016_n.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "🇨🇦 <strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
+            "heading_size": "h1",
+            "subheading": "Protect your investment with premium, Canadian-made hot tub and pool covers, tailored to fit perfectly and built to last.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_jYLann": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/653919278_1262849056058096_5644932096158488174_n.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "🇨🇦 <strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
+            "heading_size": "h1",
+            "subheading": "Protect your investment with premium, Canadian-made hot tub and pool covers, tailored to fit perfectly and built to last.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_LUVrTA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/654116555_1617388862916986_7291116713913532900_n.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "🇨🇦 <strong>CUSTOM MADE HOT TUB & SPA COVERS</strong>",
+            "heading_size": "h1",
+            "subheading": "Protect your investment with premium, Canadian-made hot tub and pool covers, tailored to fit perfectly and built to last.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "right",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_y8wneq",
+        "slide_GdWzDM",
+        "slide_eHknRc",
+        "slide_jYLann",
+        "slide_LUVrTA"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -48,6 +161,7 @@
         "text_Lycc4m",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/HeaderTorto.jpg",
         "image_overlay_opacity": 20,
@@ -200,6 +314,7 @@
   },
   "order": [
     "dealer_code_6cxAVH",
+    "slideshow_knqpCG",
     "image_banner",
     "featured_collection_6nMbxz",
     "image_banner_3bDnKD",
