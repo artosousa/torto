@@ -298,27 +298,87 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const savedCode = localStorage.getItem("dealerDiscountCode");
-    
-        if (!savedCode) return; // Exit early if no code entered
-    
-        const priceEls = document.querySelectorAll('.price-item--regular');
-    
-        priceEls.forEach(function (el) {
-          const priceText = el.textContent.trim();
-          const priceMatch = priceText.replace(/[^0-9.]/g, '');
-    
-          const price = parseFloat(priceMatch);
-          if (isNaN(price)) return;
-    
-          const discountedPrice = (price * 0.9).toFixed(2);
-          const currencySymbol = priceText.replace(/[0-9.,\s]/g, '') || '$';
-    
-          el.innerHTML = `
-            <span style="text-decoration: line-through; opacity: 0.6;">${currencySymbol}${price.toFixed(2)}</span>
-            <span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">${currencySymbol}${discountedPrice}</span>
-          `;
-        });
+        function appliedCodeFromCart(cart) {
+          if (!cart) return null;
+          var codes = cart.discount_codes;
+          if (codes && codes.length) {
+            var entry = codes[codes.length - 1];
+            if (typeof entry === "string") {
+              var s = entry.trim();
+              return s || null;
+            }
+            if (entry && entry.code) {
+              var c = String(entry.code).trim();
+              return c || null;
+            }
+          }
+          var apps =
+            cart.cart_level_discount_applications || cart.discount_applications;
+          if (!apps || !apps.length) return null;
+          for (var i = apps.length - 1; i >= 0; i--) {
+            var a = apps[i];
+            if (a && a.type === "discount_code" && a.title) {
+              var t = String(a.title).trim();
+              if (t) return t;
+            }
+          }
+          return null;
+        }
+
+        function applyDealerPrices() {
+          const priceEls = document.querySelectorAll(".price-item--regular");
+
+          priceEls.forEach(function (el) {
+            const priceText = el.textContent.trim();
+            const priceMatch = priceText.replace(/[^0-9.]/g, "");
+
+            const price = parseFloat(priceMatch);
+            if (isNaN(price)) return;
+
+            const discountedPrice = (price * 0.9).toFixed(2);
+            const currencySymbol = priceText.replace(/[0-9.,\s]/g, "") || "$";
+
+            el.innerHTML =
+              '<span style="text-decoration: line-through; opacity: 0.6;">' +
+              currencySymbol +
+              price.toFixed(2) +
+              "</span>" +
+              '<span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">' +
+              currencySymbol +
+              discountedPrice +
+              "</span>";
+          });
+        }
+
+        function shouldShowDealerPricing(codeApplied) {
+          if (codeApplied) return true;
+          return !!localStorage.getItem("dealerDiscountCode");
+        }
+
+        var cartJsUrl =
+          window.routes && window.routes.cart_url
+            ? window.routes.cart_url + ".js"
+            : "/cart.js";
+
+        fetch(cartJsUrl, { credentials: "same-origin" })
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (cart) {
+            const codeApplied = appliedCodeFromCart(cart);
+            window.codeApplied = codeApplied;
+            if (codeApplied) {
+              localStorage.setItem("dealerDiscountCode", codeApplied);
+            }
+            if (shouldShowDealerPricing(codeApplied)) {
+              applyDealerPrices();
+            }
+          })
+          .catch(function () {
+            if (localStorage.getItem("dealerDiscountCode")) {
+              applyDealerPrices();
+            }
+          });
       });
     </script>
   </head>
