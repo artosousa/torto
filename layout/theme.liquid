@@ -324,45 +324,6 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    <script>
-      (function () {
-        try {
-          if (window.Shopify && Shopify.designMode) return;
-          if (localStorage.getItem('dealerDiscountCode')) return;
-
-          var host = window.location.hostname || '';
-          if (host.indexOf('torto-covers.com') === -1) return;
-
-          var parts = window.location.pathname.split('/').filter(Boolean);
-
-          var discountIdx = parts.indexOf('discount');
-          if (discountIdx !== -1 && parts[discountIdx + 1]) {
-            var codeFromPath = parts[discountIdx + 1];
-            try {
-              codeFromPath = decodeURIComponent(codeFromPath);
-            } catch (e) {}
-            codeFromPath = String(codeFromPath).trim();
-            if (codeFromPath) {
-              localStorage.setItem('dealerDiscountCode', codeFromPath);
-              return;
-            }
-          }
-
-          var discountsIdx = parts.indexOf('discounts');
-          if (discountsIdx !== -1 && parts[discountsIdx + 1]) {
-            var codePlural = parts[discountsIdx + 1];
-            try {
-              codePlural = decodeURIComponent(codePlural);
-            } catch (e2) {}
-            codePlural = String(codePlural).trim();
-            if (codePlural) {
-              localStorage.setItem('dealerDiscountCode', codePlural);
-              window.location.replace('/discount/' + encodeURIComponent(codePlural));
-            }
-          }
-        } catch (err) {}
-      })();
-    </script>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
