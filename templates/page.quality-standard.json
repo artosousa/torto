@@ -170,6 +170,74 @@
         "padding_top": 56,
         "padding_bottom": 56
       }
+    },
+    "multicolumn_HDfBhh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yNhLiH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/canada-leaf-icon.png",
+            "title": "Made in Canada",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CN8TNJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/make-it-black-and-it-should-be-square-aspect-ratio-the-image.png",
+            "title": "Free Shipping *",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mhn9ga": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ruler_2478dfcd-557d-444b-a113-8c4a8b929eaa.svg",
+            "title": "Precision Fit Guarantee",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BMa46g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/snowFlake.svg",
+            "title": "Winter-Rated Materials",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yNhLiH",
+        "column_CN8TNJ",
+        "column_mhn9ga",
+        "column_BMa46g"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -177,6 +245,7 @@
     "image_banner_ctyhrV",
     "rich_text_QPaayg",
     "multicolumn_RhLRkT",
-    "image_with_text_UxwieW"
+    "image_with_text_UxwieW",
+    "multicolumn_HDfBhh"
   ]
 }
