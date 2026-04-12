@@ -238,6 +238,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_n3akLq": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qJHHXU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>*Applies exclusively to standard residential addresses within  (GTA, Hamilton, Guelph, and London).</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qJHHXU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
@@ -246,6 +269,7 @@
     "rich_text_QPaayg",
     "multicolumn_RhLRkT",
     "image_with_text_UxwieW",
-    "multicolumn_HDfBhh"
+    "multicolumn_HDfBhh",
+    "rich_text_n3akLq"
   ]
 }
