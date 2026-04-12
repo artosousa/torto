@@ -17,6 +17,24 @@
     "slideshow_knqpCG": {
       "type": "slideshow",
       "blocks": {
+        "slide_7z8AP8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/HeaderTorto.jpg",
+            "image_overlay_opacity": 30,
+            "heading": "Premium Custom Hot Tub Covers Made in Canada & Engineered for Ontario Winters.",
+            "heading_size": "h2",
+            "subheading": "Precision-fit replacement covers built right here in Southern Ontario. Enjoy Free Local Delivery to the GTA, Hamilton, Kitchener-Waterloo, and London. Measure once, get a perfect seal, and protect your spa for years to come.",
+            "button_label": "Customize  Yours Today",
+            "link": "shopify://collections/custom-tub-covers",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-right",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_y8wneq": {
           "type": "slide",
           "settings": {
@@ -109,6 +127,7 @@
         }
       },
       "block_order": [
+        "slide_7z8AP8",
         "slide_y8wneq",
         "slide_GdWzDM",
         "slide_eHknRc",
