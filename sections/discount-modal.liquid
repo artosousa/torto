@@ -106,7 +106,27 @@
         window.location.href = "/discount/" + encodeURIComponent(trimmed);
       }
 
-      const savedCode = localStorage.getItem("dealerDiscountCode");
+      function dealerCodeFromDiscountUrl() {
+        const host = window.location.hostname || "";
+        if (host.indexOf("torto-covers.com") === -1) return null;
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const idx = parts.indexOf("discount");
+        if (idx === -1 || !parts[idx + 1]) return null;
+        try {
+          return decodeURIComponent(parts[idx + 1]).trim() || null;
+        } catch (e) {
+          return (parts[idx + 1] || "").trim() || null;
+        }
+      }
+
+      let savedCode = localStorage.getItem("dealerDiscountCode");
+      if (!savedCode) {
+        const fromUrl = dealerCodeFromDiscountUrl();
+        if (fromUrl) {
+          localStorage.setItem("dealerDiscountCode", fromUrl);
+          savedCode = fromUrl;
+        }
+      }
       const modal = document.getElementById("modalPopup");
       const closeBtns = document.querySelectorAll("[data-close-modal]");
       const form = document.getElementById("discountForm");
