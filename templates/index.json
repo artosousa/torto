@@ -77,15 +77,15 @@
             "image": "shopify://shop_images/653919278_1262849056058096_5644932096158488174_n.png",
             "image_overlay_opacity": 30,
             "heading": "Premium Custom Hot Tub Covers Made in Canada & Engineered for Ontario Winters.",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "Precision-fit replacement covers built right here in Southern Ontario. Enjoy Free Local Delivery to the GTA, Hamilton, Kitchener-Waterloo, and London. Measure once, get a perfect seal, and protect your spa for years to come.",
             "button_label": "Customize  Yours Today",
             "link": "shopify://collections/custom-tub-covers",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-right",
-            "text_alignment": "center",
-            "text_alignment_mobile": "right",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
             "color_scheme": "scheme-1"
           }
         },
@@ -95,15 +95,15 @@
             "image": "shopify://shop_images/654116555_1617388862916986_7291116713913532900_n.jpg",
             "image_overlay_opacity": 30,
             "heading": "Premium Custom Hot Tub Covers Made in Canada & Engineered for Ontario Winters.",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "Precision-fit replacement covers built right here in Southern Ontario. Enjoy Free Local Delivery to the GTA, Hamilton, Kitchener-Waterloo, and London. Measure once, get a perfect seal, and protect your spa for years to come.",
             "button_label": "Customize  Yours Today",
             "link": "shopify://collections/custom-tub-covers",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-right",
-            "text_alignment": "center",
-            "text_alignment_mobile": "right",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
             "color_scheme": "scheme-1"
           }
         }
