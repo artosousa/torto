@@ -99,17 +99,30 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+      function applyDealerDiscountCode(code) {
+        const trimmed = String(code || "").trim();
+        if (!trimmed) return;
+        localStorage.setItem("dealerDiscountCode", trimmed);
+        window.location.href = "/discount/" + encodeURIComponent(trimmed);
+      }
+
       const savedCode = localStorage.getItem("dealerDiscountCode");
       const modal = document.getElementById("modalPopup");
       const closeBtns = document.querySelectorAll("[data-close-modal]");
       const form = document.getElementById("discountForm");
       const input = document.getElementById("discountInput");
-  
-      // Only show the modal if no code has been saved
+
+      if (form && input) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          applyDealerDiscountCode(input.value);
+        });
+      }
+
       if (!savedCode && modal) {
         modal.style.display = "block";
       }
-  
+
       if (closeBtns.length > 0) {
         for (let i = 0; i < closeBtns.length; i++) {
           closeBtns[i].addEventListener("click", function () {
@@ -117,24 +130,12 @@
           });
         }
       }
-  
+
       window.onclick = function (event) {
         if (event.target === modal) {
           modal.style.display = "none";
         }
       };
-  
-      if (form && input) {
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-          const code = input.value.trim();
-  
-          if (code) {
-            localStorage.setItem("dealerDiscountCode", code);
-            window.location.href = `/discount/${code}`;
-          }
-        });
-      }
     });
   </script>
   

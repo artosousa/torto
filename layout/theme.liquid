@@ -324,6 +324,24 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <script>
+      (function () {
+        try {
+          if (window.Shopify && Shopify.designMode) return;
+          var parts = window.location.pathname.split('/').filter(Boolean);
+          var i = parts.indexOf('discounts');
+          if (i === -1 || !parts[i + 1]) return;
+          var code = parts[i + 1];
+          try {
+            code = decodeURIComponent(code);
+          } catch (e) {}
+          code = String(code).trim();
+          if (!code) return;
+          localStorage.setItem('dealerDiscountCode', code);
+          window.location.replace('/discount/' + encodeURIComponent(code));
+        } catch (err) {}
+      })();
+    </script>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
