@@ -245,7 +245,7 @@
         "text_qJHHXU": {
           "type": "text",
           "settings": {
-            "text": "<p><em>*Applies exclusively to standard residential addresses within  (GTA, Hamilton, Guelph, and London).</em></p>"
+            "text": "<p><em>*Applies exclusively to standard residential addresses within  (GTA, Hamilton, Guelph, and London). For More details on shipping zones click here</em></p>"
           }
         }
       },
@@ -257,9 +257,9 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 28
+        "padding_bottom": 0
       }
     }
   },
