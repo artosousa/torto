@@ -1,0 +1,275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_ctyhrV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6qEDbU": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Torto Quality Standard</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_978yVC": {
+          "type": "text",
+          "settings": {
+            "text": "Built for the North. Engineered to Last.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6qEDbU",
+        "text_978yVC"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Gemini_Generated_Image_xvm81rxvm81rxvm8.png",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": false
+      }
+    },
+    "rich_text_QPaayg": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_RhLRkT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_LQYWdt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/HidensityFoam_3eeb6646-dcfa-4a23-a8cc-d3c9f8473de2.svg",
+            "title": "The Core Insulation",
+            "text": "<p>Our cover features a high-density, closed-cell EPS foam core. This provides maximum thermal resistance, designed to withstand deep Canadian winters. A custom taper ensures efficient water runoff and prevents structural snow load.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_B8zaad": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/navyMaterials_9cdcdef3-0aea-4ad4-b490-dee88e255973.svg",
+            "title": "Marine Grade Vinyl",
+            "text": "<p>Encasing the core is a premium, marine-grade skin. Engineered with UV inhibitors and a specialized cold-crack treatment to prevent brittleness. The shell provides a tough, durable barrier against moisture, sunlight, and heavy snow.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cnma8M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/VaporBarrier_0c05d7d7-1a67-42e9-b4e0-915a8e36fd0d.svg",
+            "title": "Vapour Barier",
+            "text": "<p>A crucial, internal poly-film vapor barrier is heat-sealed around the foam core. This layer forms an impenetrable seal to lock out moisture and steam. By eliminating water absorption, we prevent cover heavying and maximize long-term R-value.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_LQYWdt",
+        "column_B8zaad",
+        "column_cnma8M"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_UxwieW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_anhNHg": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Precision Over Guesstimation: Why Every Inch Matters</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_wrpxLK": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>The Problem with Databases</h3><p>Most online retailers rely on outdated, proprietary databases that match your spa make and model. This \"database over measurement\" approach assumes your tub is pristine, hasn't warped with age, and has its original cabinetry. In reality, every hot tub changes. The slightest variance in radius, acrylic shape, or skirt length can break the seal, causing your cover to leak energy like a sieve.</p><h3></h3>",
+            "text_style": "body"
+          }
+        },
+        "button_xKcbCV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Customize Yours Today",
+            "button_link": "shopify://products/platinum",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_anhNHg",
+        "text_wrpxLK",
+        "button_xKcbCV"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/653644962_1262044699443333_4956183403467869861_n_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "multicolumn_HDfBhh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yNhLiH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/canada-leaf-icon.png",
+            "title": "Made in Canada",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CN8TNJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/make-it-black-and-it-should-be-square-aspect-ratio-the-image.png",
+            "title": "Free Shipping *",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mhn9ga": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Ruler_2478dfcd-557d-444b-a113-8c4a8b929eaa.svg",
+            "title": "Precision Fit Guarantee",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BMa46g": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/snowFlake.svg",
+            "title": "Winter-Rated Materials",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yNhLiH",
+        "column_CN8TNJ",
+        "column_mhn9ga",
+        "column_BMa46g"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_n3akLq": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qJHHXU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>*Applies exclusively to standard residential addresses within  (GTA, Hamilton, Guelph, and London). For More details on shipping zones click here</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qJHHXU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_ctyhrV",
+    "rich_text_QPaayg",
+    "multicolumn_RhLRkT",
+    "image_with_text_UxwieW",
+    "multicolumn_HDfBhh",
+    "rich_text_n3akLq"
+  ]
+}
