@@ -11,13 +11,171 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_banner_mp4LT3": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WktN9J": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ontario-Wide Delivery",
+            "heading_size": "h1"
+          }
+        },
+        "text_ALqJfb": {
+          "type": "text",
+          "settings": {
+            "text": "From the GTA to the Northwest, we deliver custom-engineered protection directly to your home. Enjoy <strong>Free Shipping</strong> in our local Southern Ontario zones.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WktN9J",
+        "text_ALqJfb"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/there-should-be-a-trailer-attatched-to-the-truck-remove-the-logo-right-behind-the-door-on-the-truck.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-right",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_d3CaUE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_36fypr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tailored Shipping for Every Region",
+            "heading_size": "h1"
+          }
+        },
+        "text_L3PVCa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Torto-Covers</strong>, we've optimized our logistics to provide the most efficient delivery possible for our fellow Ontarians. From our central Southern Ontario workshop to the furthest reaches of the Northwest, we ensure your custom cover arrives safely, securely, and on time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_36fypr",
+        "text_L3PVCa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_L3YQ9i": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_QiAw66": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Southern Ontario (FREE Shipping)",
+            "icon": "none",
+            "row_content": "<p><strong>Cities Served:</strong> Toronto (GTA), Mississauga, Brampton, Vaughan, Markham, Hamilton, Burlington, Oakville, Guelph, Kitchener, Waterloo, Cambridge, and London.</p><p><strong>Included Postal Codes:</strong> L0H*, L0P*, L1G-L1Z*, L2E*, L3P-L3T*, L3X-L3Z*, L4A-L4N*, L4S-L4Z*, L5A-L5W*, L6A-L6Z*, L7A-L7G*, L7J*, L8W*, L9E*, L9J*, L9N*, L9P*, L9T*, L0R*, L0S*, L2A*, L3K*, L3M*, L7R*, L7S*, L7T*, L9A*, L9C*, L9G*, L9H*, L9K*, N0B*, N2T*, N2V*, N3A*, N3C*, N3E*, N3H*, N3L*, N4Z*, N5A*, L2G*, L2J*, L2M*, L2W*, L3B*, L3E*, L7L*, L7P*, L8B*, L8V*, N1C*, N1H*, N1K*, N1M*, N1P*, N1T*, N2A*, N2R*, N3P*, N3V*, N4G*, N4S*, N4V*, N5C*, N5P*, N5R*, N5V*, N5Z*, N6A*, N6P*, N7S*, N7X*</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7gcY4P": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Regional Ontario ($98.14 Flat Rate)",
+            "icon": "none",
+            "row_content": "<p><strong>Cities Served:</strong> Ottawa, Kanata, Orleans, Windsor, LaSalle, Leamington, Belleville, Kingston, and Quinte West.</p><p><strong>Included Postal Codes:</strong> J8L*, J8M*, J8P*, J8R*, J8T*, J8V*, J8X*, J8Z*, J9A*, J9H*, J9J*, K1A*, K1Z*, K2A*, K2M*, K2P*, K2W*, K4A*, K4C*, K7A*, K7C*, K7S*, K7V*, N0R*, N7L*, N7M*, N8N*, N8Y*, N9A*, N9K*, K7K*, K7R*, K8N*, K8R*, K8V*</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iF8pwX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rural & Northern Ontario ($190.06 Flat Rate)",
+            "icon": "none",
+            "row_content": "<p><strong>Cities Served:</strong> Peterborough, Kawartha Lakes, Collingwood, Owen Sound, Stratford, Sudbury, North Bay, Sault Ste. Marie, and Timmins.</p><p><strong>Included Postal Codes:</strong> K0A*, K0C*, K0G*, K0J*, K4K*, K4M*, K4P*, K4R*, K6A*, K6H*, K6K*, K6T*, K6V*, K7H*, K8A*, K8C*, K8H*, K9A*, K9H*, K9L*, K9V*, L0A*, L0B*, L0G*, L0J*, L0L*, L0N*, L1A*, L1E*, L3V*, L4P*, L4R*, L7K*, L9L*, L9M*, L9R*, L9S*, L9V*, L9W*, L9Z*, N0A*, N0C*, N0P*, N1A*, N2Z*, N3B*, N3W*, N3Y*, N4B*, N4K*, N4L*, N4M*, N4N*, N4W*, N4X*, N5H*, N5L*, N7A*, N7G*, N8A*, N8H*, N8M*, N9V*, N9Y*, P0A*, P0G*, P1H*, P1L*, P1P*, P2A*, K0E*, K0H*, K0K*, K0M*, K7G*, L0C*, L0E*, L0K*, P0H*, P0K*, P0M*, P0R*, P0Y*, P1A*, P1C*, P2B*, P2N*, P3A*, P3G*, P3L*, P3N*, P3P*, P3Y*, P4N*, P4R*, P5A*, P5E*, P6A*, P6C*, P7A*, P7G*, P7J*, P7L*</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eDPntx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Northwest Ontario ($435.54 Flat Rate)",
+            "icon": "none",
+            "row_content": "<p><strong>Cities Served:</strong> Thunder Bay, Kenora, Fort Frances, Dryden, and Sioux Lookout.</p><p><strong>Included Postal Codes:</strong> P0L*, P0S*, P0X*, P5N*, P7K0J6, P8N*, P8T*, P9A*, P9N*, K0L2R0, P7K-0J6, K0L-2R0</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_QiAw66",
+        "collapsible_row_7gcY4P",
+        "collapsible_row_iF8pwX",
+        "collapsible_row_eDPntx"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_PzX89i": {
+      "type": "rich-text",
+      "blocks": {
+        "text_CYUhc3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Free shipping is available exclusively to standard residential addresses within </em><em><strong>Zone 1</strong></em><em>. All deliveries are front-of-home/curbside only; drivers are not permitted to move covers to backyards or decks. For remote \"Beyond Point\" addresses, additional surcharges may apply. As every Torto-Cover is custom-manufactured to your specifications, all sales are final once production begins.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CYUhc3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_mp4LT3",
+    "rich_text_d3CaUE",
+    "collapsible_content_L3YQ9i",
+    "rich_text_PzX89i"
   ]
 }
