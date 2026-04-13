@@ -17,7 +17,17 @@
 .price--end {
   text-align: right;
 }
-
+.price .price-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  .price .price-item {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+  }
+}
 .price .price-item {
   display: inline-block;
   margin: 0 1rem 0 0;
