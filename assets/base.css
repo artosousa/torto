@@ -3652,3 +3652,13 @@ details-disclosure>details {
   padding: 3px 5px;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  span.price-item {
+    display:flex;
+    flex-direction: column;
+  }
+  span.price-item span {
+    margin-left: 0 !important
+  }
+}
