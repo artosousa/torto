@@ -3654,11 +3654,11 @@ details-disclosure>details {
 }
 
 @media screen and (max-width: 768px) {
-  span.price-item {
+  .card__content span.price-item {
     display:flex;
     flex-direction: column;
   }
-  span.price-item span {
+  .card__content span.price-item span {
     margin-left: 0 !important
   }
 }
