@@ -3653,12 +3653,18 @@ details-disclosure>details {
   margin-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .card__content span.price-item {
-    display:flex;
+.dealer-price-pair {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+@media screen and (max-width: 749px) {
+  .dealer-price-pair {
     flex-direction: column;
-  }
-  .card__content span.price-item span {
-    margin-left: 0 !important
+    align-items: flex-start;
+    gap: 0.2rem;
   }
 }
+

@@ -339,13 +339,15 @@
             const currencySymbol = priceText.replace(/[0-9.,\s]/g, "") || "$";
 
             el.innerHTML =
+              '<span class="dealer-price-pair">' +
               '<span style="text-decoration: line-through; opacity: 0.6;">' +
               currencySymbol +
               price.toFixed(2) +
-              "</span> <br>" +
-              '<span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">' +
+              "</span>" +
+              '<span style="font-weight: bold; color: #d32f2f;">' +
               currencySymbol +
               discountedPrice +
+              "</span>" +
               "</span>";
           });
         }
