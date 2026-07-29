@@ -38,28 +38,39 @@ class CartItems extends HTMLElement {
   cartUpdateUnsubscriber = undefined;
   updateAddOns() {
     const savedCode = localStorage.getItem("dealerDiscountCode");
-    const addOns = this.querySelectorAll('.product-option--price');
-    if (savedCode) {
-      addOns.forEach((addOn) => {
+    if (!savedCode) return;
 
-        const cleaned = addOn.innerText
-          .replace('+', '')
-          .replace('$', '')
-          .trim();
+    // Update line item prices (main cart uses .product-option--price)
+    this.querySelectorAll('.product-option--price').forEach((addOn) => {
+      const strike = addOn.querySelector('s');
+      const priceSource = strike ? strike.textContent : addOn.textContent;
+      const addOnPrice = parseFloat(String(priceSource).replace(/[^0-9.]/g, ''));
+      if (isNaN(addOnPrice)) return;
 
-        const addOnPrice = parseFloat(cleaned);
+      const discountedFormatted = (addOnPrice * 0.9).toFixed(2);
+      const originalFormatted = addOnPrice.toFixed(2);
 
-        const discountedAddOn = savedCode
-          ? addOnPrice * 0.9
-          : addOnPrice;
+      addOn.innerHTML = `<s>$${originalFormatted}</s> $${discountedFormatted}`;
+    });
 
-        // Always format on output
-        const originalFormatted = addOnPrice.toFixed(2);
-        const discountedFormatted = discountedAddOn.toFixed(2);
+    // Estimated total is outside cart-items; derive from gross total so drawer/main
+    // both produce the same result (avoids a second run writing $0).
+    document.querySelectorAll('.totals__total-value').forEach((totalEl) => {
+      const strike = totalEl.querySelector('s');
+      const originalText = (strike ? strike.textContent : totalEl.textContent).trim();
+      if (!originalText) return;
 
-        addOn.innerHTML = `<s>$${originalFormatted}</s> $${discountedFormatted}`;
-      });
-    }
+      const originalAmount = parseFloat(originalText.replace(/[^0-9.]/g, ''));
+      if (isNaN(originalAmount)) return;
+
+      const newTotal = (originalAmount * 0.9).toFixed(2);
+      const currencyMatch = originalText.match(/[A-Z]{3}/);
+      const currency = currencyMatch ? ` ${currencyMatch[0]}` : '';
+
+      totalEl.innerHTML =
+        `<s style="opacity: 0.6;">${originalText}</s>` +
+        `<span style="margin-left: 8px; font-weight: bold; color: #d32f2f;">$${newTotal}${currency}</span>`;
+    });
   }
   connectedCallback() {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
